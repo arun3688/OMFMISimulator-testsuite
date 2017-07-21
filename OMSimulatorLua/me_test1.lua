@@ -20,7 +20,9 @@ describe(model)
 setStopTime(model, 2.1)
 setTolerance(model, 1e-5)
 
+initialize(model)
 simulate(model)
+terminate(model)
 
 unload(model)
 
@@ -38,6 +40,7 @@ unload(model)
 --   - start time: <undefined>
 --   - stop time: <undefined>
 --   - tolerance: <undefined>
+--   - communication interval: <undefined>
 --   - result file: <no result file>
 --
 -- # Composite structure

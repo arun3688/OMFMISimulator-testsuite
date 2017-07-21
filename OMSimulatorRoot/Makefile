@@ -1,27 +1,19 @@
-TEST = ../rtestLua -v
+TEST = ../rtestRoot -v
 
 TESTFILES = \
-cs_BouncingBall.lua \
-cs_test1.lua \
-me_BouncingBall.lua \
-me_test1.lua \
-test2.lua \
-test3.lua \
-Importxml.lua \
-ImportExport.lua \
-cs_HelloWorld_Reset.lua \
-me_HelloWorld_Reset.lua \
+test_cs_BouncingBall.C \
 
 # Run make failingtest
 FAILINGTESTFILES = \
 
-# Dependency files that are not .lua or Makefile
+# Dependency files that are not .C or Makefile
 # Add them here or they will be cleaned.
 DEPENDENCIES = \
-*.lua \
+*.C \
 *.xml \
 Makefile \
 README.md \
+runRoot.sh \
 
 CLEAN = `ls | grep -w -v -f deps.tmp`
 
