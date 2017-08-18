@@ -36,6 +36,9 @@ unload(model)
 --   - tool: OpenModelica Compiler OMCompiler v1.12.0-dev.395+gdeeabde
 --   - input interface:
 --   - output interface:
+--   - parameters:
+--     - parameter e
+--     - parameter g
 --
 -- # Simulation settings
 --   - start time: <undefined>

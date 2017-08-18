@@ -52,6 +52,7 @@ unload(model2)
 --     - input x2
 --   - output interface:
 --     - output y
+--   - parameters:
 -- sourceA
 --   - FMI 2.0 ME (solver: euler)
 --   - path: ../FMUs/me_source1.fmu
@@ -60,6 +61,9 @@ unload(model2)
 --   - input interface:
 --   - output interface:
 --     - output y
+--   - parameters:
+--     - parameter A
+--     - parameter omega
 -- sourceB
 --   - FMI 2.0 ME (solver: euler)
 --   - path: ../FMUs/me_source1.fmu
@@ -68,6 +72,9 @@ unload(model2)
 --   - input interface:
 --   - output interface:
 --     - output y
+--   - parameters:
+--     - parameter A
+--     - parameter omega
 --
 -- # Simulation settings
 --   - start time: 0
