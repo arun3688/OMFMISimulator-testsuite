@@ -42,17 +42,6 @@ unload(model2)
 
 -- Result:
 -- # FMU instances
--- adder
---   - FMI 2.0 ME (solver: euler)
---   - path: ../FMUs/me_adder1.fmu
---   - GUID: {bd121558-6b16-4944-819d-dd5fc0b9b8ea}
---   - tool: OpenModelica Compiler OMCompiler v1.12.0-dev.395+gdeeabde
---   - input interface:
---     - input x1
---     - input x2
---   - output interface:
---     - output y
---   - parameters:
 -- sourceA
 --   - FMI 2.0 ME (solver: euler)
 --   - path: ../FMUs/me_source1.fmu
@@ -75,6 +64,17 @@ unload(model2)
 --   - parameters:
 --     - parameter A
 --     - parameter omega
+-- adder
+--   - FMI 2.0 ME (solver: euler)
+--   - path: ../FMUs/me_adder1.fmu
+--   - GUID: {bd121558-6b16-4944-819d-dd5fc0b9b8ea}
+--   - tool: OpenModelica Compiler OMCompiler v1.12.0-dev.395+gdeeabde
+--   - input interface:
+--     - input x1
+--     - input x2
+--   - output interface:
+--     - output y
+--   - parameters:
 --
 -- # Simulation settings
 --   - start time: 0
@@ -85,11 +85,11 @@ unload(model2)
 --
 -- # Composite structure
 -- ## Initialization
--- sourceB.y -> adder.x2
 -- sourceA.y -> adder.x1
+-- sourceB.y -> adder.x2
 --
 -- ## Simulation
--- sourceB.y -> adder.x2
 -- sourceA.y -> adder.x1
+-- sourceB.y -> adder.x2
 --
 -- endResult
