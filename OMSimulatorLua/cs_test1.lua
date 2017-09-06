@@ -40,8 +40,8 @@ unload(model)
 --
 -- # Simulation settings
 --   - start time: 0
---   - stop time: <undefined>
---   - tolerance: <undefined>
+--   - stop time: 1
+--   - tolerance: 0.0001
 --   - communication interval: 0.1
 --   - result file: <no result file>
 --
