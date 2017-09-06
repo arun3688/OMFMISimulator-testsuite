@@ -80,8 +80,8 @@ unload(model2)
 --   - start time: 0
 --   - stop time: 10
 --   - tolerance: 1e-05
---   - communication interval: <undefined>
---   - result file: <no result file>
+--   - communication interval: 0.1
+--   - result file: ImportExport_res.mat
 --
 -- # Composite structure
 -- ## Initialization

@@ -41,10 +41,10 @@ unload(model)
 --     - parameter g
 --
 -- # Simulation settings
---   - start time: <undefined>
+--   - start time: 0
 --   - stop time: <undefined>
 --   - tolerance: <undefined>
---   - communication interval: <undefined>
+--   - communication interval: 0.1
 --   - result file: <no result file>
 --
 -- # Composite structure
