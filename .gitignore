@@ -1,5 +1,7 @@
 # generated files
 *_diff.csv
 *_res.csv
+*_res.mat
 *.log
 omsllog.txt
+difftool/lex.yy.o

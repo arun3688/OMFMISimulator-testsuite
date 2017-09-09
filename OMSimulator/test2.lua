@@ -1,13 +1,4 @@
-#!/usr/bin/lua
--- name: test2
 -- status: correct
-
-if os.getenv("OS") == "Windows_NT" then
-  package.cpath = package.cpath .. ';../../install/lib/?.dll'
-else
-  package.cpath = package.cpath .. ';../../install/lib/libOMSimulatorLua.so'
-end
-require("OMSimulatorLua")
 
 version = getVersion()
 -- print(version)
@@ -48,6 +39,6 @@ terminate(model)
 unload(model)
 
 -- Result:
--- adder1.y at 10: -0.087548485525547
--- adder2.y at 10: -0.59472013591111
+-- adder1.y at 10.0: -0.087548485525547
+-- adder2.y at 10.0: -0.59472013591111
 -- endResult

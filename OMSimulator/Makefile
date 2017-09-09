@@ -1,19 +1,25 @@
 TEST = ../rtest -v
 
 TESTFILES = \
-me_test1.mos \
-me_BouncingBall.mos \
-cs_test1.mos \
-cs_BouncingBall.mos \
+cs_BouncingBall.lua \
+cs_test1.lua \
+me_BouncingBall.lua \
+me_test1.lua \
+test2.lua \
+test3.lua \
+Importxml.lua \
+ImportExport.lua \
+cs_HelloWorld_Reset.lua \
+me_HelloWorld_Reset.lua \
 
-# These tests are OS dependent. Move up when fixed.
 # Run make failingtest
 FAILINGTESTFILES = \
 
-# Dependency files that are not .mo .mos or Makefile
+# Dependency files that are not .lua or Makefile
 # Add them here or they will be cleaned.
 DEPENDENCIES = \
-*.mos \
+*.lua \
+ConnectedFmu.xml \
 Makefile \
 README.md \
 
@@ -24,8 +30,6 @@ CLEAN = `ls | grep -w -v -f deps.tmp`
 test:
 	@echo
 	@echo Running tests...
-	@echo
-	@echo "OPENMODELICAHOME = $(OPENMODELICAHOME)"
 	@$(TEST) $(TESTFILES)
 
 # Cleans all files that are not listed as dependencies

@@ -1,13 +1,5 @@
-#!/usr/bin/lua
 -- name: me_HelloWorld_Reset
 -- status: correct
-
-if os.getenv("OS") == "Windows_NT" then
-  package.cpath = package.cpath .. ';../../install/lib/?.dll'
-else
-  package.cpath = package.cpath .. ';../../install/lib/libOMSimulatorLua.so'
-end
-require("OMSimulatorLua")
 
 version = getVersion()
 -- print(version)
