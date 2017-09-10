@@ -1,4 +1,4 @@
-time, h, v, der(h), der(v), ground, e, g, _D_whenCondition1, _D_whenCondition2
+time, BouncingBall.h, BouncingBall.v, BouncingBall.der(h), BouncingBall.der(v), BouncingBall.ground, BouncingBall.e, BouncingBall.g, BouncingBall._D_whenCondition1, BouncingBall._D_whenCondition2
 0, 1, 0, 0, -9.81, 0, 0.95, 9.81, 0, 0
 0.01, 1, -0.0981, -0.0981, -9.81, 0, 0.95, 9.81, 0, 0
 0.02, 0.999019, -0.1962, -0.1962, -9.81, 0, 0.95, 9.81, 0, 0
@@ -500,4 +500,3 @@ time, h, v, der(h), der(v), ground, e, g, _D_whenCondition1, _D_whenCondition2
 4.98, 0.758423, 0.599154, 0.599154, -9.81, 0.4, 0.95, 9.81, 0, 0
 4.99, 0.764415, 0.501054, 0.501054, -9.81, 0.4, 0.95, 9.81, 0, 0
 5, 0.769425, 0.402954, 0.402954, -9.81, 0.4, 0.95, 9.81, 0, 0
-5.01, 0.773455, 0.304854, 0.304854, -9.81, 0.5, 0.95, 9.81, 0, 0

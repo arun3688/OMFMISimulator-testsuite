@@ -23,7 +23,7 @@ unload(model)
 vars = {'BouncingBall.g', 'BouncingBall.e'}
 -- vars = {"BouncingBall.v", "BouncingBall.der(v)", "BouncingBall.h", "BouncingBall.der(h)", "BouncingBall.ground"}
 for _,var in ipairs(vars) do
-  if 1 == compareSimulationResults("cs_BouncingBall_res.mat", "../ReferenceFiles/cs_BouncingBall.mat", var, 1e-2, 1e-4) then
+  if 1 == compareSimulationResults("cs_BouncingBall_res.mat", "../ReferenceFiles/cs_BouncingBall.csv", var, 1e-2, 1e-4) then
     print(var .. " is equal")
   else
     print(var .. " is not equal")
