@@ -4,6 +4,7 @@ all: OMSimulator
 
 OMSimulator:
 	@$(MAKE) -C OMSimulator > OMSimulator.log
+	@$(MAKE) -C OMSimulator clean
 	@grep == OMSimulator.log
 
 clean:

@@ -12,12 +12,22 @@ describe(model)
 
 setStopTime(model, 2.1)
 setTolerance(model, 1e-5)
+setResultFile(model, "cs_test1_res.mat")
 
 initialize(model)
 simulate(model)
 terminate(model)
 
 unload(model)
+
+vars = {"test1.x"}
+for _,var in ipairs(vars) do
+  if 1 == compareSimulationResults("cs_test1_res.mat", "../ReferenceFiles/cs_test1.mat", var, 1e-2, 1e-4) then
+    print(var .. " is equal")
+  else
+    print(var .. " is not equal")
+  end
+end
 
 -- Result:
 -- # FMU instances
@@ -42,4 +52,5 @@ unload(model)
 --
 -- ## Simulation
 --
+-- test1.x is equal
 -- endResult

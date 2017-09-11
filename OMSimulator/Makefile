@@ -19,9 +19,8 @@ FAILINGTESTFILES = \
 # Add them here or they will be cleaned.
 DEPENDENCIES = \
 *.lua \
-ConnectedFmu.xml \
 Makefile \
-README.md \
+ConnectedFmu.xml \
 
 CLEAN = `ls | grep -w -v -f deps.tmp`
 
