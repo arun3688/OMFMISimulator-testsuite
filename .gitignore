@@ -4,4 +4,5 @@
 *_res.mat
 *.log
 omsllog.txt
+difftool/lex.yy.c
 difftool/lex.yy.o
