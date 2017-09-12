@@ -1,4 +1,3 @@
--- name: Importxml
 -- status: correct
 
 version = getVersion()

@@ -1,4 +1,3 @@
--- name: me_HelloWorld_Reset
 -- status: correct
 
 version = getVersion()

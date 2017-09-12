@@ -1,4 +1,3 @@
--- name: me_test1
 -- status: correct
 
 version = getVersion()

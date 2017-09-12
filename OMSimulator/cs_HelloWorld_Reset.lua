@@ -1,4 +1,3 @@
--- name: cs_HelloWorld_Reset
 -- status: correct
 
 version = getVersion()

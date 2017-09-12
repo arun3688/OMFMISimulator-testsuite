@@ -1,4 +1,3 @@
--- name: cs_BouncingBall
 -- status: correct
 
 version = getVersion()

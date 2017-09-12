@@ -1,4 +1,3 @@
--- name: cs_test1
 -- status: correct
 
 version = getVersion()

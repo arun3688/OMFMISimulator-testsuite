@@ -1,4 +1,3 @@
--- name: test2
 -- status: correct
 
 version = getVersion()
@@ -25,11 +24,10 @@ setStopTime(model, 10.0)
 setTolerance(model, 1e-5)
 
 exportXML(model, "ImportExport.xml")
+unload(model)
 
 model2 = loadModel("ImportExport.xml")
 describe(model2)
-
-unload(model)
 unload(model2)
 
 -- Result:
