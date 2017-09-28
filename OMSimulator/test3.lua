@@ -1,7 +1,6 @@
 -- status: correct
 
-version = getVersion()
--- print(version)
+setLogFile("omsllog.txt")
 
 model = newModel()
 setTempDirectory(".")

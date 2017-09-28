@@ -1,7 +1,6 @@
 -- status: correct
 
-version = getVersion()
--- print(version)
+setLogFile("omsllog.txt")
 
 setTempDirectory(".")
 model = loadModel('ConnectedFmu.xml')
