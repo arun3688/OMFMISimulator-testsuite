@@ -2,15 +2,17 @@ TEST = ../rtest -v
 
 TESTFILES = \
 cs_BouncingBall.lua \
+cs_HelloWorld_Reset.lua \
+cs_loop1.lua \
 cs_test1.lua \
+ImportExport.lua \
+Importxml.lua \
 me_BouncingBall.lua \
+me_HelloWorld_Reset.lua \
+me_loop1.lua \
 me_test1.lua \
 test2.lua \
 test3.lua \
-Importxml.lua \
-ImportExport.lua \
-cs_HelloWorld_Reset.lua \
-me_HelloWorld_Reset.lua \
 
 # Run make failingtest
 FAILINGTESTFILES = \

@@ -1,0 +1,33 @@
+loadString("
+package loop1
+  model A
+    input Real p;
+    input Real u;
+    output Real y;
+  equation
+    y = u * p;
+  end A;
+
+  model B
+    input Real p;
+    input Real u;
+    output Real y;
+  equation
+    y = (u - p)^2;
+  end B;
+
+  model P
+    output Real y;
+  equation
+    y = time;
+  end P;
+end loop1;
+"); getErrorString();
+
+buildModelFMU(loop1.A, version="2.0", fmuType="cs", fileNamePrefix="cs_loop1_A", platforms={"static"}); getErrorString();
+buildModelFMU(loop1.B, version="2.0", fmuType="cs", fileNamePrefix="cs_loop1_B", platforms={"static"}); getErrorString();
+
+buildModelFMU(loop1.A, version="2.0", fmuType="me", fileNamePrefix="me_loop1_A", platforms={"static"}); getErrorString();
+buildModelFMU(loop1.B, version="2.0", fmuType="me", fileNamePrefix="me_loop1_B", platforms={"static"}); getErrorString();
+
+buildModelFMU(loop1.P, version="2.0", fmuType="cs", fileNamePrefix="cs_loop1_P", platforms={"static"}); getErrorString();
