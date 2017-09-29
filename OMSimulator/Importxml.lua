@@ -20,4 +20,5 @@ unload(model)
 -- Result:
 -- adder1.y at 2.1: 0.54162379186909
 -- adder2.y at 2.1: 1.564940364302
+-- info:    Logging information has been saved to "omsllog.txt"
 -- endResult

@@ -81,4 +81,5 @@ unload(model2)
 -- sourceA.y -> adder.x1
 -- sourceB.y -> adder.x2
 --
+-- info:    Logging information has been saved to "omsllog.txt"
 -- endResult

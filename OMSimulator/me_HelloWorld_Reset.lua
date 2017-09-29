@@ -36,6 +36,7 @@ terminate(model)
 unload(model)
 
 -- Result:
--- Parametrization 1: HelloWorld.x at 1: 0.36603234127323
--- Parametrization 2: HelloWorld.x at 1: 0.066309777947377
+-- Parametrization 1: HelloWorld.x at 1.0: 0.36603234127323
+-- Parametrization 2: HelloWorld.x at 1.0: 0.066309777947377
+-- info:    Logging information has been saved to "omsllog.txt"
 -- endResult

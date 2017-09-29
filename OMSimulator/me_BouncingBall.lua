@@ -57,4 +57,5 @@ end
 -- BouncingBall.h is equal
 -- BouncingBall.der(h) is equal
 -- BouncingBall.ground is equal
+-- info:    Logging information has been saved to "omsllog.txt"
 -- endResult

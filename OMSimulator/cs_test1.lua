@@ -51,4 +51,5 @@ end
 -- ## Simulation
 --
 -- test1.x is equal
+-- info:    Logging information has been saved to "omsllog.txt"
 -- endResult

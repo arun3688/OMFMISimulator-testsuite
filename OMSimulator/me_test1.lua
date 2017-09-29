@@ -53,4 +53,5 @@ end
 --
 -- test1.x is equal
 -- test1.der(x) is equal
+-- info:    Logging information has been saved to "omsllog.txt"
 -- endResult

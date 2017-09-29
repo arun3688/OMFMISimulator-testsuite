@@ -37,4 +37,5 @@ unload(model)
 -- Result:
 -- sourceA.y at 10.1: 0.48791025888348
 -- sourceB.y at 10.1: -0.62507064889287
+-- info:    Logging information has been saved to "omsllog.txt"
 -- endResult
