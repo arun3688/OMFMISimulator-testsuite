@@ -24,10 +24,10 @@ package loop1
 end loop1;
 "); getErrorString();
 
-buildModelFMU(loop1.A, version="2.0", fmuType="cs", fileNamePrefix="cs_loop1_A", platforms={"static"}); getErrorString();
-buildModelFMU(loop1.B, version="2.0", fmuType="cs", fileNamePrefix="cs_loop1_B", platforms={"static"}); getErrorString();
+buildModelFMU(loop1.A, version="2.0", fmuType="cs", fileNamePrefix="cs.loop1.A", platforms={"static"}); getErrorString();
+buildModelFMU(loop1.B, version="2.0", fmuType="cs", fileNamePrefix="cs.loop1.B", platforms={"static"}); getErrorString();
 
-buildModelFMU(loop1.A, version="2.0", fmuType="me", fileNamePrefix="me_loop1_A", platforms={"static"}); getErrorString();
-buildModelFMU(loop1.B, version="2.0", fmuType="me", fileNamePrefix="me_loop1_B", platforms={"static"}); getErrorString();
+buildModelFMU(loop1.A, version="2.0", fmuType="me", fileNamePrefix="me.loop1.A", platforms={"static"}); getErrorString();
+buildModelFMU(loop1.B, version="2.0", fmuType="me", fileNamePrefix="me.loop1.B", platforms={"static"}); getErrorString();
 
-buildModelFMU(loop1.P, version="2.0", fmuType="cs", fileNamePrefix="cs_loop1_P", platforms={"static"}); getErrorString();
+buildModelFMU(loop1.P, version="2.0", fmuType="cs", fileNamePrefix="cs.loop1.P", platforms={"static"}); getErrorString();
