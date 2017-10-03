@@ -15,6 +15,10 @@ addConnection(model, "B.y", "A.u")
 addConnection(model, "P.y", "A.p")
 addConnection(model, "P.y", "B.p")
 
+--name = "loop1"
+--exportCompositeStructure(model, name)
+--os.execute("dot -Gsplines=none " .. name .. ".dot | neato -n -Gsplines=ortho -Tpng -o" .. name .. ".png")
+
 setResultFile(model, "me_loop1_res.mat")
 setStopTime(model, 0.5)
 setCommunicationInterval(model, 1e-2)

@@ -32,6 +32,10 @@ print("sourceA.y at " .. tcur .. ": " .. getReal(model, "sourceA.y"))
 print("sourceB.y at " .. tcur .. ": " .. getReal(model, "sourceB.y"))
 terminate(model)
 
+--name = "foo"
+--exportCompositeStructure(model, name)
+--os.execute("dot -Gsplines=none " .. name .. ".dot | neato -n -Gsplines=ortho -Tpng -o" .. name .. ".png")
+
 unload(model)
 
 -- Result:
