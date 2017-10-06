@@ -65,6 +65,8 @@ unload(model2)
 --     - output y
 --   - parameters:
 --
+-- # Lookup tables
+--
 -- # Simulation settings
 --   - start time: 0
 --   - stop time: 10
@@ -73,6 +75,8 @@ unload(model2)
 --   - result file: ImportExport_res.mat
 --
 -- # Composite structure
+-- ## External inputs
+--
 -- ## Initialization
 -- sourceA.y -> adder.x1
 -- sourceB.y -> adder.x2

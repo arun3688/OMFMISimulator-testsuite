@@ -42,6 +42,8 @@ end
 --     - parameter e
 --     - parameter g
 --
+-- # Lookup tables
+--
 -- # Simulation settings
 --   - start time: 0
 --   - stop time: 5
@@ -50,6 +52,8 @@ end
 --   - result file: cs_BouncingBall_res.mat
 --
 -- # Composite structure
+-- ## External inputs
+--
 -- ## Initialization
 --
 -- ## Simulation

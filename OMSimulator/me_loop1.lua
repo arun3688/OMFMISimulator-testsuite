@@ -75,6 +75,8 @@ end
 --     - output y
 --   - parameters:
 --
+-- # Lookup tables
+--
 -- # Simulation settings
 --   - start time: 0
 --   - stop time: 0.5
@@ -83,6 +85,8 @@ end
 --   - result file: me_loop1_res.mat
 --
 -- # Composite structure
+-- ## External inputs
+--
 -- ## Initialization
 -- P.y -> B.p
 -- P.y -> A.p

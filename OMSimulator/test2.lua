@@ -86,6 +86,8 @@ unload(model)
 --     - parameter A
 --     - parameter omega
 --
+-- # Lookup tables
+--
 -- # Simulation settings
 --   - start time: 0
 --   - stop time: 10
@@ -94,6 +96,8 @@ unload(model)
 --   - result file: <no result file>
 --
 -- # Composite structure
+-- ## External inputs
+--
 -- ## Initialization
 -- sourceB.y -> adder2.x2
 -- sourceB.y -> adder1.x2

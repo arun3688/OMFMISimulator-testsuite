@@ -38,6 +38,8 @@ end
 --   - output interface:
 --   - parameters:
 --
+-- # Lookup tables
+--
 -- # Simulation settings
 --   - start time: 0
 --   - stop time: 1
@@ -46,6 +48,8 @@ end
 --   - result file: <no result file>
 --
 -- # Composite structure
+-- ## External inputs
+--
 -- ## Initialization
 --
 -- ## Simulation
