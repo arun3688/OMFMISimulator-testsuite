@@ -4,11 +4,11 @@ use File::Temp qw/ tempfile /;
 
 (undef,$testTempFile) = tempfile("rtest$$.XXXXX", TMPDIR => 1, SUFFIX => ".tmp", UNLINK => 1);
 $cwd = getcwd;
-if ($cwd =~ m/(.*)OMFMISimulator\/(.+)$/) {
+if ($cwd =~ m/(.*)FMISimulator\/(.+)$/) {
   $dirname = $2;
-  $INSTALLDIR = "$1OMFMISimulator/install";
+  $INSTALLDIR = "$1FMISimulator/install";
 } else {
-  print "You must run rtest from OMFMISimulator (was run from $cwd)\n";
+  print "You must run rtest from FMISimulator (was run from $cwd)\n";
   exit 0;
 }
 
