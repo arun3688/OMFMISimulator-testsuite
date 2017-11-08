@@ -1,7 +1,10 @@
-#status: correct
+## status: correct
 
-from OMSimulatorPython import OMSimulatorPython
-session=OMSimulatorPython()
+import sys
+sys.path.append('../../install/lib')
+
+from OMSimulator import OMSimulator
+session=OMSimulator()
 
 session.setLogFile("omsllog.txt")
 
@@ -28,34 +31,33 @@ for var in vars:
   else:
     print(var + " is not equal")
 
-    
-# Result:
-# # FMU instances
-# test1
-#   - FMI 2.0 CS
-#   - path: ../FMUs/cs_test1.fmu
-#   - GUID: {e72ab90f-3c54-4c60-a423-177dbaddd14c}
-#   - tool: OpenModelica Compiler OMCompiler v1.12.0-dev.395+gdeeabde
-#   - input interface:
-#   - output interface:
-#   - parameters:
-#
-# # Lookup tables
-#
-# # Simulation settings
-#   - start time: 0
-#   - stop time: 1
-#   - tolerance: 0.0001
-#   - communication interval: 0.1
-#   - result file: <no result file>
-#
-# # Composite structure
-# ## External inputs
-#
-# ## Initialization
-#
-# ## Simulation
-#
-# test1.x is equal
-# info:    Logging information has been saved to "omsllog.txt"
-# endResult
+## Result:
+## # FMU instances
+## test1
+##   - FMI 2.0 CS
+##   - path: ../FMUs/cs_test1.fmu
+##   - GUID: {e72ab90f-3c54-4c60-a423-177dbaddd14c}
+##   - tool: OpenModelica Compiler OMCompiler v1.12.0-dev.395+gdeeabde
+##   - input interface:
+##   - output interface:
+##   - parameters:
+##
+## # Lookup tables
+##
+## # Simulation settings
+##   - start time: 0
+##   - stop time: 1
+##   - tolerance: 0.0001
+##   - communication interval: 0.1
+##   - result file: <no result file>
+##
+## # Composite structure
+## ## External inputs
+##
+## ## Initialization
+##
+## ## Simulation
+##
+## test1.x is equal
+## info:    Logging information has been saved to "omsllog.txt"
+## endResult

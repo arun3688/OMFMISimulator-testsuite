@@ -1,4 +1,4 @@
-TEST = ../rtest -v
+TEST = ../rtestPython -v
 
 TESTFILES = \
 cs_BouncingBall.py \

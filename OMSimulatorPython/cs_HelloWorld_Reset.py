@@ -1,7 +1,10 @@
-# status: correct
+## status: correct
 
-from OMSimulatorPython import OMSimulatorPython
-session=OMSimulatorPython()
+import sys
+sys.path.append('../../install/lib')
+
+from OMSimulator import OMSimulator
+session=OMSimulator()
 
 session.setLogFile("omsllog.txt")
 
@@ -36,8 +39,8 @@ print("Parametrization 2: HelloWorld.x at " + str(tcur) + ": " + str(session.get
 session.terminate(model)
 session.unload(model)
 
-# Result:
-# Parametrization 1: HelloWorld.x at 1.0: 0.36603234127323
-# Parametrization 2: HelloWorld.x at 1.0: 0.066309777947377
-# info:    Logging information has been saved to "omsllog.txt"
-# endResult
+## Result:
+## Parametrization 1: HelloWorld.x at 1.0: 0.366032341273
+## Parametrization 2: HelloWorld.x at 1.0: 0.0663097779474
+## info:    Logging information has been saved to "omsllog.txt"
+## endResult

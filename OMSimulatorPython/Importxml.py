@@ -1,8 +1,11 @@
 
-# status: correct
+## status: correct
 
-from OMSimulatorPython import OMSimulatorPython
-session=OMSimulatorPython()
+import sys
+sys.path.append('../../install/lib')
+
+from OMSimulator import OMSimulator
+session=OMSimulator()
 
 session.setLogFile("omsllog.txt")
 
@@ -19,8 +22,9 @@ print("adder2.y at  .. " + str(tcur) + ": " + str(session.getReal(model, "adder2
 session.terminate(model)
 session.unload(model)
 
-# -- Result:
-# -- adder1.y at 2.1: 0.54162379186909
-# -- adder2.y at 2.1: 1.564940364302
-# -- info:    Logging information has been saved to "omsllog.txt"
-# -- endResult
+## Result:
+## python test 2.1
+## adder1.y at  .. 2.1: 0.541623791869
+## adder2.y at  .. 2.1: 1.5649403643
+## info:    Logging information has been saved to "omsllog.txt"
+## endResult

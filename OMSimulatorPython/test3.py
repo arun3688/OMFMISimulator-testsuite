@@ -1,7 +1,10 @@
-# status: correct
+## status: correct
 
-from OMSimulatorPython import OMSimulatorPython
-session=OMSimulatorPython()
+import sys
+sys.path.append('../../install/lib')
+
+from OMSimulator import OMSimulator
+session=OMSimulator()
 
 session.setLogFile("omsllog.txt")
 
@@ -36,8 +39,8 @@ print("sourceB.y at " + str(tcur) + ": " + str(session.getReal(model, "sourceB.y
 session.terminate(model)
 session.unload(model)
 
-# Result:
-# sourceA.y at 10.1: 0.48791025888348
-# sourceB.y at 10.1: -0.62507064889287
-# info:    Logging information has been saved to "omsllog.txt"
-# endResult
+## Result:
+## sourceA.y at 10.1: 0.487910258883
+## sourceB.y at 10.1: -0.625070648893
+## info:    Logging information has been saved to "omsllog.txt"
+## endResult
