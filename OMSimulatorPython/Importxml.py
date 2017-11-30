@@ -1,8 +1,4 @@
-
 ## status: correct
-
-import sys
-sys.path.append('../../install/lib')
 
 from OMSimulator import OMSimulator
 session=OMSimulator()
